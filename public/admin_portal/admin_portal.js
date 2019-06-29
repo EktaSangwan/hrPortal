@@ -125,7 +125,7 @@ function uploadUserData(userInput) {
             document.getElementById('lastname').value = "";
             document.getElementById('doj').value = moment(new Date).format("YYYY-MM-DD");
             document.getElementById('ed').value = moment(new Date).format("YYYY-MM-DD");
-            // document.getElementById("ppInput").files = [];
+            
 
             document.getElementById("ppInput").value = null;
         }

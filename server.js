@@ -11,7 +11,7 @@ var multer = require('multer');
 var upload = multer({dest: __dirname + '/uploads/images'});
 
 // configuration ===============================================================
-mongoose.connect(database.localUrl); 	// Connect to local MongoDB instance. A remoteUrl is also available (modulus.io)
+mongoose.connect(database.localUrl); 	// Connect to local MongoDB instance.
 
 app.use(express.static('./public')); 		// set the static files location /public/img will be /img for users
 app.use(morgan('dev')); // log every request to the console

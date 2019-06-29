@@ -144,7 +144,7 @@ function updateUserAttendance(auth, res, queryParam){
     sheets.spreadsheets.values.append({
       auth: auth,
       spreadsheetId: '1ohO7pN-phG4dG6wZksFZq8cfHzOmaQc_2aIlqivw7DI',
-      range: 'sheet1!A2:B', //Change Sheet1 if your worksheet's name is something else
+      range: 'sheet1!A2:B', //Change sheet1 if your worksheet's name is something else
       valueInputOption: "USER_ENTERED",
      
       resource: {

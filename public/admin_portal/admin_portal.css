@@ -9,7 +9,7 @@ tbody {
 
 tbody {
     height: 300px;
-    /* Just for the demo          */
+   
     overflow-y: auto;
     /* Trigger vertical scroll    */
     overflow-x: hidden;
@@ -23,7 +23,7 @@ tbody {
 tbody td,
 thead th {
     width: 20%;
-    /* Optional */
+    
     border-right: 1px solid black;
 }
 
