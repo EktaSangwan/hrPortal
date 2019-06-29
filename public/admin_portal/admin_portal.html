@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>User Management</title>
+	<!-- SCROLLS -->
+	<link rel="stylesheet" href="../shared/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./admin_portal.css">
+	<!-- load bootstrap -->
+	<link rel="stylesheet" href="../shared/css/fontawesome-free-5.9.0-web/css/fontawesome.min.css">
+	<script src="../shared/js/moment.min.js"></script>
+	<script src="../shared/js/jquery.min.js"></script>
+	<script src="./admin_portal.js"></script>
+	<script src="../shared/js/shared.js"></script>
+</head>
+
+<body>
+
+	<h1>Please fill data in the form below:</h1>
+
+	<!-- <img src="/uploads/images/image.*"> -->
+	<div class="col-sm-6">
+		<div class="container">
+			<div class="row">
+				<label>Click to add profile picture
+					<input id="ppInput" type="file" name="myImage" accept="image/*" />
+				</label>
+				<img hidden id="preview" src="" alt="">
+			</div>
+			<div class="row">
+				<label>FirstName:<input type="text" name="employee-first-name" id="firstname" required></label>
+			</div>
+			<br>
+			<div class="row">
+				<label>LastName:<input type="text" name="employee-last-name" id="lastname" required></label>
+			</div>
+			<br>
+			<div class="row">
+				<label>DOJ<input type="date" name="doj" id="doj"></label>
+			</div>
+			<br>
+			<div class="row">
+				<label>End Date:<input type="date" name="ed" id="ed"></label>
+			</div>
+			<!-- <br>
+			<div class="row">
+				<button onclick="findDuration()" type="button">DURATION</button>
+			</div> -->
+			<div class="row">
+				<div id="drn"></div>
+			</div>
+			<br>
+			<div class="row">
+				<label>Task:<br><textarea name="task"></textarea></label>
+			</div>
+			<br>
+			<div class="row">
+				<button onclick="createUser()">Submit</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="col-sm-6">
+		<table class="table" id="myTable">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">FirstName</th>
+					<th scope="col">LastName</th>
+					<th scope="col">DOJ</th>
+					<th scope="col">EndDate</th>
+					<th scope="col">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>

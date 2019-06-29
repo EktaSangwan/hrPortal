@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./hr_portal.css" />
+    <link rel="stylesheet" href="../shared/css/fullcalendar.css" />
+    <link rel="stylesheet" href="../shared/css/bootstrap.min.css" />
+    <script src="../shared/js/jquery.min.js"></script>
+    <script src="../shared/js/jquery-ui.min.js"></script>
+    <script src="../shared/js/moment.min.js"></script>
+    <script src="../shared/js/fullcalendar.min.js"></script>
+    <script src="./hr_portal.js"></script>
+</head>
+
+<body>
+    <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
+        <div class="card">
+            <input id="searchText" value="" placeholder="Enter firstname to search" />
+            <button class="btn btn-outline-primary col-sm-6" id="searchButton" onclick="getEmployee()">Search</button>
+        </div>
+
+        <div id="listDetails">
+            <table id="userTable" style="width:100%">
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>DOJ</th>
+                    <th>End Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td> <a href="../user_info/user_info.html" id="data1"></a></td>
+                    <td id="data2"></td>
+                    <td id="data3"></td>
+                    <td id="data4"></td>
+                    <td id="data5"></td>
+                </tr>
+            </table>
+        </div>
+        <div id='calendar'></div>
+</body>
+
+</html>

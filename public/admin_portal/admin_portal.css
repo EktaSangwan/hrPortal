@@ -1,0 +1,33 @@
+thead,
+tbody {
+    display: block;
+}
+
+#myTable {
+    border: 2px solid black;
+}
+
+tbody {
+    height: 300px;
+    /* Just for the demo          */
+    overflow-y: auto;
+    /* Trigger vertical scroll    */
+    overflow-x: hidden;
+    /* Hide the horizontal scroll */
+}
+
+tbody {
+    border-top: 2px solid black;
+}
+
+tbody td,
+thead th {
+    width: 20%;
+    /* Optional */
+    border-right: 1px solid black;
+}
+
+tbody td:last-child,
+thead th:last-child {
+    border-right: none;
+}

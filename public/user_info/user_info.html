@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../shared/css/shared.css">
+    <link rel="stylesheet" href="./user_info.css">
+    <link rel="stylesheet" href="../shared/css/bootstrap.min.css">
+    <!-- load bootstrap -->
+    <link rel="stylesheet" href="../shared/css/fontawesome-free-5.9.0-web/css/fontawesome.min.css">
+    <script src="../shared/js/moment.min.js"></script>
+    <script src="../shared/js/jquery.min.js"></script>
+    <script src="../shared/js/shared.js"></script>
+    <script src="./user_info.js"></script>
+</head>
+
+<body>
+    <div class="container max-height">
+        <div class="row max-height center-padded">
+            <div class="col-sm-6 max-height">
+                <div class="profile-card">
+
+                    <div class="user-image">
+
+                        <img id="disPP" src="">
+                    </div>
+
+                    <div class="card-body">
+                        <h3 id="userFirstName"></h3>
+                        <span id="userLastName" class="title"></span>
+                    </div>
+                    <div class="card-footer" text-center>
+                        <h5 class="text-center" id="userJoining">DOJ : </h5>
+                        <p class="text-center" id="userEndDate">End Date : </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 max-height">
+                <div id="container">
+                    <div class="row">
+                        <input placeholder="choose documents" type="file" id="upload-file" name="myFile"
+                            accept="zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed" />
+                        <button id="uploader-btn" onclick="uploadFile()">Submit Your Document</button>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <input type="file" id="attendance-file" name="myAttendance"
+                            accept="zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed" />
+                        <button id="attendance-btn" onclick="uploadAttendance()">Upload Your Attendance</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
