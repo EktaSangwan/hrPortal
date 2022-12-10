@@ -7,7 +7,7 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "bson-objectid": "^1.2.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fnv1a": "^1.0.1",
     "fs": "0.0.1-security",
     "googleapis": "^39.2.0",
